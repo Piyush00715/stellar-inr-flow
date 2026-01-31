@@ -85,20 +85,11 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Bottom marquee */}
-      <div className="absolute bottom-10 left-0 right-0">
-        <MarqueeText 
-          text="POWERED BY STELLAR • SOROBAN SMART CONTRACTS • TESTNET DEMO" 
-          className="text-sm font-display uppercase tracking-widest text-muted-foreground/50 py-4"
-          speed="slow"
-        />
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 animate-float">
-        <div className="w-6 h-10 rounded-full border-2 border-primary/30 flex justify-center pt-2">
-          <div className="w-1 h-2 bg-primary rounded-full animate-pulse" />
-        </div>
+      {/* Bottom text */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
+        <span className="text-xs font-display uppercase tracking-widest text-muted-foreground/40">
+          Powered by Stellar
+        </span>
       </div>
     </section>
   );
